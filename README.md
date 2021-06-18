@@ -13,7 +13,7 @@ abc 사이트를 활성화 할 수 있다.
 
 ## 기타
 
-자세한 내용은 아래 리포를 참고.
+자세한 내용은 아래를 참고.
 
 <https://github.com/drypot/linux-memo>
 
