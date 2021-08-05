@@ -6,8 +6,8 @@
 
 abc 사이트를 활성화 할 수 있다.
 
-    $ cd sites  
-    $ ln -s ../abc.conf enabled
+    $ ln -s ../abc.conf sites/enabled
+    $ . bin/d-nginx-reload.sh
 
 링크 생성후 nginx 에 reload 시그널을 보낸다.
 
