@@ -15,5 +15,4 @@ abc 사이트를 활성화 할 수 있다.
 
 자세한 내용은 아래를 참고.
 
-<https://github.com/drypot/linux-memo>
-
+<https://github.com/drypot/web-memo>
