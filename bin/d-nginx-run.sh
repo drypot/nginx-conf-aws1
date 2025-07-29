@@ -2,8 +2,8 @@
 args=(
   --name nginx
   --network=host
-  #-p 80:80
-  #-p 443:443
+  #--publish 80:80
+  #--publish 443:443
   --mount type=bind,source=/data/nginx/nginx-conf-aws1/nginx.conf,target=/etc/nginx/nginx.conf,readonly
   #--mount type=bind,source=/data/nginx/nginx-conf-aws1/enabled,target=/etc/nginx/enabled,readonly
   --mount type=bind,source=/data/nginx/nginx-conf-aws1/sites,target=/etc/nginx/sites,readonly
@@ -12,8 +12,10 @@ args=(
   --mount type=bind,source=/data/nginx/letsencrypt,target=/etc/letsencrypt,readonly
   --mount type=bind,source=/data/service,target=/data/service,readonly
   --mount type=bind,source=/data/upload,target=/data/upload,readonly
-#  -it --rm
-  -d
+  --restart unless-stopped
+  --detach
+#  --interactive --tty
+#  --rm
   nginx:1.19.7
 #  nginx-debug -g 'daemon off;'
 )
