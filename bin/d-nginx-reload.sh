@@ -1,6 +1,6 @@
 #!/bin/bash
 arg=(
-  --interactive --tty
+#  --interactive --tty
   nginx 
   nginx -s reload
 )
